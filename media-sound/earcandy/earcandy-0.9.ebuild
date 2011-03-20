@@ -3,23 +3,21 @@
 # $Header: $
 
 EAPI=2
-inherit bzr distutils
-
-EBZR_REPO_URI="lp:earcandy"
+inherit distutils
 
 DESCRIPTION="A sound level manager that fades applications in and out based on their profile and window focus"
 HOMEPAGE="https://launchpad.net/earcandy"
-SRC_URI=""
+SRC_URI="http://launchpad.net/earcandy/0.9/0.9/+download/earcandy_0.9.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="** ~x86"
+KEYWORDS="~x86"
 IUSE=""
-DOCS="README COPYING"
+DOCS=""
 
 DEPEND="media-sound/pulseaudio
 	dev-lang/python
-	dev-vcs/bzr"
+    dev-python/python-distutils-extra"
 
 RDEPEND="${DEPEND}
 	dev-python/ctypesgen
@@ -35,6 +33,12 @@ RDEPEND="${DEPEND}
 	gnome-base/libglade
 	dev-python/libwnck-python"
 
-src_unpack() {
-	bzr_src_unpack
+src_compile() {
+    cd ${WORKDIR}/${PN}
+    distutils_src_compile
+}
+
+src_install() {
+    cd ${WORKDIR}/${PN}
+    distutils_src_install
 }
