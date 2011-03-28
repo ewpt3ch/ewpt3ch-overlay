@@ -15,13 +15,21 @@ RDEPEND="app-admin/conky
     app-emulation/vmware-workstation
     app-office/libreoffice-bin
     app-text/calibre
-    app-text/epdfview
+    app-text/evince
+    app-text/unix2dos
+    dev-python/pyxdg
     lxde-base/lxappearance
     lxde-base/lxpanel
+    lxde-base/lxpolkit
     media-gfx/shotwell
     media-sound/gpodder
+    media-sound/paprefs
+    media-sound/pavucontrol
+    media-sound/pavumeter
+    media-tv/mythtv
     media-video/cheese
     media-video/vlc
+    net-ftp/filezilla
     net-im/skype
     www-client/chromium
     www-client/firefox
@@ -29,6 +37,8 @@ RDEPEND="app-admin/conky
     x11-base/xorg-x11
     x11-misc/gmrun
     x11-misc/nitrogen
+    x11-misc/obconf
+    x11-misc/pcmanfm
     x11-terms/terminal
     x11-themes/blueglass-xcursors
     x11-themes/echo-icon-theme
@@ -37,9 +47,7 @@ RDEPEND="app-admin/conky
     x11-themes/gtk-engines-aurora
     x11-themes/gtk-engines-murrine
     x11-themes/murrine-themes
-   	x11-misc/pcmanfm
-	x11-wm/openbox
-	x11-misc/obconf
+    x11-wm/openbox
     "
 
 pkg_postinst() {
