@@ -1,8 +1,8 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-devel/gcc/gcc-4.6.0.ebuild,v 1.1 2011/04/03 01:41:56 dirtyepic Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-devel/gcc/gcc-4.6.0.ebuild,v 1.3 2011/04/13 03:35:39 dirtyepic Exp $
 
-PATCH_VER="1.0"
+PATCH_VER="1.2"
 UCLIBC_VER="1.0"
 
 ETYPE="gcc-compiler"
@@ -25,7 +25,7 @@ DESCRIPTION="The GNU Compiler Collection"
 
 LICENSE="GPL-3 LGPL-3 || ( GPL-3 libgcc libstdc++ gcc-runtime-library-exception-3.1 ) FDL-1.2"
 KEYWORDS=""
-IUSE="go"
+IUSE=""
 
 RDEPEND=">=sys-libs/zlib-1.1.4
 	virtual/libiconv
